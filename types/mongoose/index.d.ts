@@ -1280,7 +1280,7 @@ declare module "mongoose" {
     $isDefault(path?: string): boolean;
 
     /** Getter/setter around the session associated with this document. */
-    $session(session?: ClientSession): ClientSession;
+    $session(session?: ClientSession | null): ClientSession;
 
     /**
      * Takes a populated field and returns it to its unpopulated state.
